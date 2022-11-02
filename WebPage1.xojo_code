@@ -28,7 +28,6 @@ Begin WebPage WebPage1
    _ImplicitInstance=   False
    _mDesignHeight  =   0
    _mDesignWidth   =   0
-   _mName          =   ""
    _mPanelIndex    =   -1
    Begin WebRectangle ContainerRectangle
       BackgroundColor =   &cFFFFFF00
@@ -147,7 +146,7 @@ Begin WebPage WebPage1
          LockTop         =   True
          LockVertical    =   False
          Multiline       =   False
-         PanelIndex      =   0
+         PanelIndex      =   "0"
          Parent          =   "ContainerRectangle"
          Scope           =   2
          TabIndex        =   3
@@ -274,7 +273,7 @@ End
 		    EmailTextField.SetBadge("Please enter a valid email")
 		    validForm = False
 		  Else
-		    EmailTextField.SetBadge("OK", -10, -10, "success")
+		    EmailTextField.SetBadge("OK", "success")
 		  End If
 		  
 		  // Validate password
@@ -282,7 +281,7 @@ End
 		    PasswordTextField.SetBadge("Too little")
 		    validForm = False
 		  Else
-		    PasswordTextField.SetBadge("OK", -10, -10, "success")
+		    PasswordTextField.SetBadge("OK", "success")
 		  End If
 		  
 		  // If the email and password is valid, then we'll

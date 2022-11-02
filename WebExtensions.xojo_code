@@ -8,7 +8,7 @@ Protected Module WebExtensions
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub SetBadge(Extends control As WebUIControl, caption As String, top As Integer = -10, right As Integer = -10, indicator As String = "danger")
+		Sub SetBadge(Extends control As WebUIControl, caption As String, indicator As String = "danger", top As Integer = -10, right As Integer = -10)
 		  Var classes() As String = Array("xojo-badge", "d-flex", "p-2", _
 		  "border", "border-light", "bg-" + indicator)
 		  classes.Add(If(caption.Length < 2, "rounded-circle", "rounded-pill"))
