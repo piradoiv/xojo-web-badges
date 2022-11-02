@@ -10,6 +10,12 @@ It contains two new methods, available in any control that inherits from WebUICo
 Extension methods are a simple and powerful way to extend internal Xojo classes. You can read more about this module feature here:    
 [Using Xojo Language](https://documentation.xojo.com/getting_started/using_the_xojo_language/) > [Modules](https://documentation.xojo.com/getting_started/using_the_xojo_language/modules.html) > [Extension Methods](https://documentation.xojo.com/getting_started/using_the_xojo_language/modules.html#extension-methods)
 
+# How to use
+Three simple steps:    
+1. Download and open the project
+2. Copy the WebExtensions module into your project
+3. That's it, now you can use `SetBadge` and `RemoveBadge` on your controls
+
 ## SetBadge
 Used to set the badge on any WebUIControl. You can use the following parameters:
 - **caption**: The caption of the badge. If you just want to display a round circle, use an space
