@@ -7,7 +7,7 @@ This is a module that allows you to set badges on visual controls:
 It contains two new methods, available in any control that inherits from WebUIControl:    
 <img width="288" alt="module-extension-methods" src="https://user-images.githubusercontent.com/601856/199590919-aeae6202-5a1c-4d2f-9bab-d11a739b7d07.png">
 
-Extension methods are a simple and powerful way to extend internal Xojo classes. You can read more about this module feature here:
+Extension methods are a simple and powerful way to extend internal Xojo classes. You can read more about this module feature here:    
 [Using Xojo Language](https://documentation.xojo.com/getting_started/using_the_xojo_language/) > [Modules](https://documentation.xojo.com/getting_started/using_the_xojo_language/modules.html) > [Extension Methods](https://documentation.xojo.com/getting_started/using_the_xojo_language/modules.html#extension-methods)
 
 ## SetBadge
