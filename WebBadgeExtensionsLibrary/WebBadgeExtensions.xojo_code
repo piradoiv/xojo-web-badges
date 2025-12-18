@@ -1,5 +1,5 @@
 #tag Module
-Protected Module WebExtensions
+Protected Module WebBadgeExtensions
 	#tag Method, Flags = &h0
 		Sub RemoveBadge(Extends control As WebUIControl)
 		  Var js As String = "$('#" + control.ControlID + " .xojo-badge').remove();"

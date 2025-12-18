@@ -2,7 +2,9 @@
 Begin WebPage WebPage1
    AllowTabOrderWrap=   True
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
+   CSSClasses      =   ""
    Enabled         =   False
    Height          =   518
    ImplicitInstance=   True
@@ -20,6 +22,8 @@ Begin WebPage WebPage1
    LockVertical    =   False
    MinimumHeight   =   400
    MinimumWidth    =   600
+   PanelIndex      =   0
+   ScaleFactor     =   0.0
    TabIndex        =   0
    Title           =   "Untitled"
    Top             =   0
@@ -30,10 +34,15 @@ Begin WebPage WebPage1
    _mDesignWidth   =   0
    _mPanelIndex    =   -1
    Begin WebRectangle ContainerRectangle
-      BackgroundColor =   &cFFFFFF00
+      BorderColor     =   &c000000FF
+      BorderThickness =   1
+      ControlCount    =   0
       ControlID       =   ""
+      CornerSize      =   -1
+      CSSClasses      =   ""
       Enabled         =   True
-      HasBackgroundColor=   False
+      FillColor       =   &cFFFFFF00
+      HasFillColor    =   False
       Height          =   264
       Index           =   -2147483648
       Indicator       =   0
@@ -47,8 +56,10 @@ Begin WebPage WebPage1
       LockRight       =   False
       LockTop         =   False
       LockVertical    =   True
+      PanelIndex      =   0
       Scope           =   2
       TabIndex        =   2
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   127
       Visible         =   True
@@ -61,6 +72,7 @@ Begin WebPage WebPage1
          AllowSpellChecking=   False
          Caption         =   ""
          ControlID       =   ""
+         CSSClasses      =   ""
          Enabled         =   True
          FieldType       =   2
          Height          =   38
@@ -77,6 +89,7 @@ Begin WebPage WebPage1
          LockTop         =   True
          LockVertical    =   False
          MaximumCharactersAllowed=   0
+         PanelIndex      =   0
          Parent          =   "ContainerRectangle"
          ReadOnly        =   False
          Scope           =   2
@@ -94,6 +107,7 @@ Begin WebPage WebPage1
       Begin WebLabel EmailLabel
          Bold            =   False
          ControlID       =   ""
+         CSSClasses      =   ""
          Enabled         =   True
          FontName        =   ""
          FontSize        =   0.0
@@ -111,6 +125,7 @@ Begin WebPage WebPage1
          LockTop         =   True
          LockVertical    =   False
          Multiline       =   False
+         PanelIndex      =   0
          Parent          =   "ContainerRectangle"
          Scope           =   2
          TabIndex        =   1
@@ -129,12 +144,13 @@ Begin WebPage WebPage1
       Begin WebLabel PasswordLabel
          Bold            =   False
          ControlID       =   ""
+         CSSClasses      =   ""
          Enabled         =   True
          FontName        =   ""
          FontSize        =   0.0
          Height          =   38
          Index           =   -2147483648
-         indicator       =   0
+         Indicator       =   0
          InitialParent   =   "ContainerRectangle"
          Italic          =   False
          Left            =   127
@@ -146,7 +162,7 @@ Begin WebPage WebPage1
          LockTop         =   True
          LockVertical    =   False
          Multiline       =   False
-         PanelIndex      =   "0"
+         PanelIndex      =   0
          Parent          =   "ContainerRectangle"
          Scope           =   2
          TabIndex        =   3
@@ -167,6 +183,7 @@ Begin WebPage WebPage1
          AllowSpellChecking=   False
          Caption         =   ""
          ControlID       =   ""
+         CSSClasses      =   ""
          Enabled         =   True
          FieldType       =   1
          Height          =   38
@@ -183,6 +200,7 @@ Begin WebPage WebPage1
          LockTop         =   True
          LockVertical    =   False
          MaximumCharactersAllowed=   0
+         PanelIndex      =   0
          Parent          =   "ContainerRectangle"
          ReadOnly        =   False
          Scope           =   2
@@ -202,6 +220,7 @@ Begin WebPage WebPage1
          Cancel          =   False
          Caption         =   "Submit"
          ControlID       =   ""
+         CSSClasses      =   ""
          Default         =   True
          Enabled         =   False
          Height          =   38
@@ -216,6 +235,8 @@ Begin WebPage WebPage1
          LockRight       =   False
          LockTop         =   False
          LockVertical    =   False
+         Outlined        =   False
+         PanelIndex      =   0
          Parent          =   "ContainerRectangle"
          Scope           =   2
          TabIndex        =   5
@@ -233,6 +254,7 @@ Begin WebPage WebPage1
       Cancel          =   False
       Caption         =   "Example"
       ControlID       =   ""
+      CSSClasses      =   ""
       Default         =   False
       Enabled         =   True
       Height          =   38
@@ -246,8 +268,11 @@ Begin WebPage WebPage1
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      Outlined        =   False
+      PanelIndex      =   0
       Scope           =   2
       TabIndex        =   6
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   20
       Visible         =   True
@@ -330,6 +355,30 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="PanelIndex"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_mPanelIndex"
 		Visible=false
